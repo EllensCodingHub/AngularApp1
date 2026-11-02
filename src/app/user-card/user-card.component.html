@@ -1,0 +1,27 @@
+
+<section class="profile-card">
+  <!-- Bind the image source and alternative text to user data.-->
+   <img
+    class="profile-picture"
+    [src]="user().profilePicture"
+    [alt]="'Profile picture of ' + user().name"
+    width="140"
+    height="140">
+
+  <div class="profile-details">
+    <h2 id="profile-name">{{ user().name }}</h2>
+
+    <p class="role">{{ user().age }}</p>
+
+    <p><strong>Age:</strong> {{ user().age }}</p>
+
+    <p>
+      <strong>Status:</strong>
+      {{ user().isOnline ? 'Online' : 'Offline' }}
+    </p>
+
+    <!-- This text updates when the parent receives a new bio. -->
+    <h3>About Me</h3>
+    <p class="bio">{{ user().bio }} </p>
+  </div>
+</section>

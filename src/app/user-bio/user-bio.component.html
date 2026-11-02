@@ -1,0 +1,23 @@
+<section class="bio-card">
+  <h2 id="bio-heading">Edit your bio</h2>
+
+  <label for="bio-editor">Tell people a little about yourself:</label>
+
+  <!-- The reference variable lets the. button read this text area. -->
+   <textarea 
+   #bioEditor
+   id="bio-editor"
+   rows="6"
+   [value]="bio()"
+   aria-describedby="bio-error">
+  </textarea>
+
+  <!-- Pass the text area's current value into the save method.-->
+   <button type="button" (click)="saveBio(bioEditor.value)">
+      Save Bio
+   </button>
+
+   <p id="bio-error" class="error-message" role="alert">
+      {{ errorMessage }}
+   </p>
+</section>

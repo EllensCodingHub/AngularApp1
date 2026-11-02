@@ -1,0 +1,51 @@
+
+/* Keep the bio editor's styles inside this component. */
+:host {
+  display: block;
+}
+.bio-card {
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #cbbbc7;
+  border-radius: 12px;
+}
+h2 {
+  margin-top: 0;
+  color: #493044;
+}
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  color: #272326;
+  background-color: #fffcfe;
+  border: 1px solid #92748a;
+  border-radius: 6px;
+  font: inherit;
+  line-height: 1.6;
+  resize: vertical;
+}
+button {
+  padding: 0.7rem 1rem;
+  background-color: #68445f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #493044;
+}
+.error-message {
+  margin-bottom: 0;
+  color: #a12020;
+  font-weight: bold;
+}

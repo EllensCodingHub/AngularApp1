@@ -1,0 +1,15 @@
+<section class="status-card">
+  <h2 id="status-heading">Availability</h2>
+
+  <!-- Apply the online class when the input value is true. -->
+   <p class="status-label" [class.online]="isOnline()">
+      {{ isOnline() ? 'Online' : 'Offline' }}
+   </p>
+
+   <p>Choose whether you are available to connect.</p>
+
+   <!-- Call the method when the button is clicked. -->
+    <button type="button" (click)="toggleStatus()">
+      {{ isOnline() ? 'Go Offline' : 'Go Online' }}
+    </button>
+</section>

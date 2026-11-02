@@ -1,0 +1,44 @@
+
+/* Centre the dashboard and limit its width on large screens. */
+:host {
+  display: block;
+}
+.dashboard {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.dashboard-header {
+  margin-bottom: 1.5rem;
+}
+.subtitle {
+  color: #68445f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+}
+h1 {
+  margin: 0 0 0.75rem;
+  color: #493044;
+}
+.dashoard-header p {
+  line-height: 1.6;
+}
+/* Arrange the status and bio sections beside one another. */
+.dashboard-controls {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.feedback {
+  min-height: 1.5rem;
+  color: #365947;
+  font-weight: bold;
+}
+/* Stack the sections on smaller screens. */
+@media (max-width: 700px) {
+  .dashboard-controls {
+    grid-template-columns: 1fr;
+  }
+}

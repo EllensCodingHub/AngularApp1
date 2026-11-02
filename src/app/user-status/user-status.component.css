@@ -1,0 +1,47 @@
+
+/* Style the availability section independently. */
+:host {
+  display: block;
+}
+.status-card {
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #cbbbc7;
+  border-radius: 12px;
+}
+h2 {
+  margin-top: 0;
+  color: #493044;
+}
+p {
+  line-height: 1.6;
+}
+.status-label {
+  display: inline-block;
+  margin-top: 0;
+  padding: 0.35rem 0.8rem;
+  background-color: #eee;
+  color: #4a4a4a;
+  border-radius: 20px;
+  font-weight: 700;
+}
+/* Class binding activates this style when the user is online. */
+.status-label.online {
+  background-color: #e1efe5;
+  color: #245336;
+}
+button {
+  padding: 0.7rem 1rem;
+  background-color: #68445f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #493044;
+}
